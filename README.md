@@ -8,33 +8,6 @@ This repo hosts gazebo worlds for various drone scenarios and various drone conf
 - [Quad-Planes](#quad-planes)
 - [Boats](#boat-simulation)
 
-## Community Discord Server
-
-Come be a part of the growing community of drone application developers! Join the conversation in our [discord](https://discord.gg/xZjXaAf).
-
-## IQ Tutorials
-This Repo is part of the Intelligent Quads Software Development tutorial series. Please take a look at the following resources to learn more about how to use this repository.
-
-[Intelligent Quads Text Tutorials](https://github.com/Intelligent-Quads/iq_tutorials)
-
-[Intelligent Quads Video Tutorials](https://www.youtube.com/channel/UCuZy0c-uvSJglnZfQC0-uaQ)
-
-
-## Dependencies 
-
-Take a look at these tutorials to setup ardupilot, gazebo and the ardupilot gazebo plugin 
-
-[Installing Ardupilot and MAVProxy](https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/Installing_Ardupilot.md)
-
-[Installing QGroundControl](https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/installing_qgc.md)
-
-[Installing Gazebo and ArduPilot Plugin](https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/installing_gazebo_arduplugin.md)
-
-Installing x-term is recommended as it allows the ardupilot sitl interface to run in a terminal that will cleanly close when closing you sitl instance
-```
-sudo apt install xterm
-```
-
 ## Drone Simulations 
 
 ![runway world](docs/imgs/runway.jpg)
@@ -112,21 +85,6 @@ sim_vehicle.py -v APMrover2 -f gazebo-rover  -m --mav10 --console -L Viridian
 
 
 ## IQ_SIM Models
-
-
-### drone1-12
-This repo hosts a few helpful gazebo models you can use to build upon. Included in this repo are 12 drones which contain the ardupilot plugin. Each ardupilot plugin is staggered such that you can simulate multiple unique aircraft using ardupilot's SITL. For more information please see the iq_tutorial on [ardupilot drone swarming](https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/swarming_ardupilot.md)
-
-### drone_with_lidar
-
-Example drone that has a 2d lidar attached. The lidar plugin publishes a `sensor_msgs/LaserScan` ROS msg containing return data.
-
-topics
-```
-/spur/laser/scan
-```
-
-![drone_with_lidar](docs/imgs/drone_with_lidar.png)
 
 ### drone_with_sonar
 
