@@ -13,7 +13,7 @@ class image_converter:
   def __init__(self):
 
     self.bridge = CvBridge()
-    self.image_sub2 = rospy.Subscriber("???", ???, self.callback)
+    self.image_sub2 = rospy.Subscriber("???", ???, self.callback)  ### Panggil topik dan data type
 
   def callback(self, data):
     try:
@@ -21,7 +21,7 @@ class image_converter:
     except CvBridgeError as e:
       print(e)
     
-    cv2.imshow("Kamera Depan", cv_image)
+    cv2.imshow("Kamera Depan", ???)  ### Ape ni
     cv2.waitKey(3)
 
 def main(args):
